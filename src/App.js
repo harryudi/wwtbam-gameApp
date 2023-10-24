@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./app.css";
+import Trivia from "./components/Trivia";
+import moneyPyramid from "./components/MoneyPyramid";
 
 function App() {
+  const [questionNumber, setQuestionNumber] = useState(1);
+  const [stopGame, setStopGame] = useState(false);
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="main">
+        <div className="top">
+          <div className="timer">30</div>
+        </div>
+        <div className="bottom">
+          <Trivia
+            questionNumber={questionNumber}
+            setQuestionNumber={setQuestionNumber}
+            setStopGame={setStopGame}
+          />
+        </div>
+      </div>
+      <div className="pyramid">
+        <ul className="moneyList">
+          {moneyPyramid.map((m)=>(
+            <li className={questionNumber === m.id ? "moneyListItem active" : "moneyListItem"}>
+            <span className="moneyListItemNumber">{m.id}</span>
+            <span className="moneyListItemAmount">{m.amount}</span>
+          </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
