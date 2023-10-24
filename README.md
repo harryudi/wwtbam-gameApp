@@ -1,36 +1,32 @@
-# Game App with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+Who Wants to Be a Millionaire - React Edition
 
 
-## Learn More
+Overview
+Welcome to the React Edition of the classic quiz show "Who Wants to Be a Millionaire!" Do you have what it takes to answer a series of challenging questions and become a virtual millionaire? Test your knowledge and luck in this engaging and fun game inspired by the popular TV show.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Features
+Multiple-choice questions that range from easy to extremely difficult.
+Progress through different prize levels on your way to the million-dollar question.
+Stunning user interface and lifelike lifeline animations.
+How to Play
+Clone this repository to your local machine.
+Navigate to the project directory and run npm install to install the required dependencies.
+Run npm start to start the development server.
+Open your web browser and visit http://localhost:3000 to play the game.
+Answer questions, use lifelines wisely, and try to reach the one million dollar question!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Technologies Used
+React: A popular JavaScript library for building user interfaces.
+HTML & CSS: For structuring and styling the game.
+JavaScript: To handle game logic and interactions.
+Contributors
+Harrison Udi - Lead Developer
+License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
 
-### Code Splitting
+Acknowledgments
+Special thanks to the creators of "Who Wants to Be a Millionaire" for the inspiration behind this project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Enjoy the game and aim for that million-dollar question! Good luck!
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Disclaimer: This game is for entertainment purposes only and is not affiliated with the official "Who Wants to Be a Millionaire" TV show.
