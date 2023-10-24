@@ -7,7 +7,7 @@ import Timer from "./components/Timer";
 function App() {
   const [questionNumber, setQuestionNumber] = useState(1);
   const [stopGame, setStopGame] = useState(false);
-  const [earnings, setEarnings]= useState("$0")
+  const [earnings, setEarnings]= useState("$0");
  
 
   useEffect(()=>{
