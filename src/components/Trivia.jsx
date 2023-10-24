@@ -3,7 +3,7 @@ import questions from "./QuestionFile";
 
 export default function Trivia({
     
-    setGameStop, 
+    setStopGame, 
     questionNumber, 
     setQuestionNumber,
 }) {
@@ -24,15 +24,15 @@ export default function Trivia({
   const handleClick = (a) => {
     setSelectedAnswer(a);
     setClassName("answer active");
-    delay(3000, ()=> setClassName(a.correct ? "answer correct" : "answer wrong"))
+    delay(1000, ()=> setClassName(a.correct ? "answer correct" : "answer wrong"))
     
 
-    delay(6000, ()=>{
+    delay(4000, ()=>{
         if (a.correct) {
             setQuestionNumber((prev)=>prev + 1);
             setSelectedAnswer(null);
         } else {
-            setGameStop(true);
+            setStopGame(true);
         }
     });
   };
