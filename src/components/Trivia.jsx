@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react"
 import questions from "./QuestionFile";
+import useSound from "use-sound";
+import start from "../assets/play.mp3";
+import win from '../assets/win.mp3';
+import lose from '../assets/lose.mp3';
 
 export default function Trivia({
     
@@ -10,6 +14,15 @@ export default function Trivia({
     const [currentQuestion, setCurrentQuestion] = useState(null);
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [className, setClassName] = useState("answer");
+    const [startSound]=useSound(start);
+    const [winSound]=useSound(win);
+    const [loseSound]= useSound(lose);
+   
+
+    useEffect(()=>{
+        startSound();
+    }, [questionNumber]);
+    
 
     useEffect(() => {
       setCurrentQuestion(questions[questionNumber - 1]);
@@ -29,10 +42,16 @@ export default function Trivia({
 
     delay(4000, ()=>{
         if (a.correct) {
+          winSound()
+          delay(1000,()=>{
             setQuestionNumber((prev)=>prev + 1);
-            setSelectedAnswer(null);
+          setSelectedAnswer(null);
+          });
         } else {
+          delay(1000,()=>{
             setStopGame(true);
+          });
+            
         }
     });
   };
