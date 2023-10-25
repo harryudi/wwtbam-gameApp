@@ -3,8 +3,10 @@ import "./app.css";
 import Trivia from "./components/Trivia";
 import moneyPyramid from "./components/MoneyPyramid";
 import Timer from "./components/Timer";
+import Start from "./components/Start";
 
 function App() {
+  const [userName, setUserName] = useState(null);
   const [questionNumber, setQuestionNumber] = useState(1);
   const [stopGame, setStopGame] = useState(false);
   const [earnings, setEarnings]= useState("$0");
@@ -16,7 +18,9 @@ function App() {
 
   return (
     <div className="app">
-      <div className="main">
+      {userName ? (
+        <>
+        <div className="main">
         {stopGame ? (
           <h1 className="endtext">You earned: {earnings}</h1>
         ) : (
@@ -46,6 +50,9 @@ function App() {
           ))}
         </ul>
       </div>
+        </>
+      ) : <Start setUserName={setUserName} />}
+      
     </div>
   );
 }

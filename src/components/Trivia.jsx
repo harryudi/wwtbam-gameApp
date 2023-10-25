@@ -33,6 +33,7 @@ export default function Trivia({
         callback();
     }, duration);
   }
+//////////////////////to check for correct answer/////////////////////////////
 
   const handleClick = (a) => {
     setSelectedAnswer(a);
@@ -48,6 +49,7 @@ export default function Trivia({
           setSelectedAnswer(null);
           });
         } else {
+          loseSound()
           delay(1000,()=>{
             setStopGame(true);
           });
