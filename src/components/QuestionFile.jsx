@@ -10,11 +10,11 @@ const questions = [
           "correct": true,
         },
         {
-          text: "Tolu",
+          text: "Mary",
           "correct": false,
         },
-        {text: "Maria", "correct": false},
-        {text: "Rewaju", "correct": false}
+        {text: "London", "correct": false},
+        {text: "Peru", "correct": false}
       ]
     },
     {
