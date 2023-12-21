@@ -1,3 +1,7 @@
+
+<img width="952" alt="wwtbam" src="https://github.com/harryudi/wwtbam-gameApp/assets/111028346/96d3cff5-f058-4e60-938c-b60b2a6de343">
+
+
 Who Wants to Be a Millionaire - React Edition
 
 
